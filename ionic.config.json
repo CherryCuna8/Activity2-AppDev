@@ -1,0 +1,7 @@
+{
+  "name": "Activity2-IonicApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
