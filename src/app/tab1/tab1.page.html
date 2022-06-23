@@ -1,17 +1,62 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
+  <ion-toolbar color="tertiary">
+    <ion-title style="text-align: center ;">
+      Profile
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="dark">
+  <section class="details">
+          <div class="img">
+          <img src="assets/img/3.jpeg">
+          </div>
+          <div>
+           <h3>Cherry Cuna</h3>
+           <ion-label>A Proud Working Student</ion-label>
+           
+          </div>
+  </section>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card color="success">
+    <ion-card-header>
+      <ion-card-title>All about Me..</ion-card-title>
+    </ion-card-header>
+   <ion-card-content>
+     I am 22 years old. Born Augost 08,2022<br>
+     I believe in a saying that "The graetest glory in living lies not in never failing
+     ,but in rising every time we fail"
+      </ion-card-content>
+  </ion-card>
+  <ion-card color="danger">
+    <ion-card-header>
+      <ion-icon name="home" ></ion-icon>
+      <ion-label style="margin: 4px left; "> Address: </ion-label>
+    
+     
+     
+    </ion-card-header>
+   <ion-card-content>
+      Brgy.Villaconzollo Jaro, Leyte
+      </ion-card-content>
+  </ion-card>
+  <ion-card color="tertiary">
+    <ion-card-header>
+      <ion-icon name="book"></ion-icon>
+      <ion-label style="margin: 4px left; "> School: </ion-label>
+    </ion-card-header>
+   <ion-card-content>
+      Eastern Visayas State University - Carigara Campus
+      </ion-card-content>
+  </ion-card>
+
+  <ion-card color="secondary">
+    <ion-card-header>
+      <ion-icon name="School"></ion-icon>
+      <ion-label style="margin: 4px left; "> Course/Year/Sec: </ion-label>
+    </ion-card-header>
+   <ion-card-content>
+      Bachelor of Science in Information Tehnology, Third year - B
+      </ion-card-content>
+  </ion-card>
 </ion-content>
