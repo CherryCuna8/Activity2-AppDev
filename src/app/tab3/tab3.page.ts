@@ -2,7 +2,7 @@ import { Component} from '@angular/core';
 import { AlertController, ToastController } from '@ionic/angular';
 
 
-
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -25,7 +25,7 @@ export class Tab3Page {
 
 
 
-  constructor(public alertController: AlertController, public toastController: ToastController){
+  constructor(public alertController: AlertController, public toastController: ToastController, public route: Router ){
   }
   async  confirmation(index: number) {
 
@@ -133,6 +133,9 @@ export class Tab3Page {
 
 
     (await toast).present();
+  }
+  async redirectTo(){
+    this.route.navigate(['mailpage'])
   }
 
 
